@@ -1,0 +1,18 @@
+spring:
+
+  # MySQL 설정
+  datasource:
+    url: jdbc:mysql://localhost:3306/web_socket_test_db?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&useSSL=true
+    #url: jdbc:mysql://localhost:3306/web_socket_test_db
+    username: web_user
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #defer-datasource-initialization: true
+
+  # MongoDB 설정
+  data:
+    mongodb:
+      uri: mongodb+srv://kim2001:jj6907**@mycluster.7t470.mongodb.net/chatTest

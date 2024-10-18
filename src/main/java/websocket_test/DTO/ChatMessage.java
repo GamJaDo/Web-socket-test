@@ -13,10 +13,10 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ChatMessage {
 
-	private MessageType type;
-	private String roomId;
-	private String sender;
-	private String message;
+	private MessageType type;  // 메시지 타입 (ENTER, TALK 등)
+	private String roomId;     // 채팅방 ID
+	private String sender;     // 메시지 발신자
+	private String message;    // 메시지 내용
 
 	public enum MessageType {
 		ENTER, TALK
